@@ -27,6 +27,7 @@ public class WriteTestMain {
         }
     }
 
+    //used to find the keys
     public static void sequentialSearch(int[] a) {
         for (int i = 0; i < keys_Array.length; i++) {
             for (int j = 0; j < a.length; j++) {

@@ -13,7 +13,7 @@ import org.apache.poi.xwpf.usermodel.XWPFTableRow;
  */
 public class WriteToWord {
 
-    private int[][] results;
+    private long[][] results;
     private int bs; //default 104
     private int ss; //default 100
 
@@ -21,7 +21,7 @@ public class WriteToWord {
     public WriteToWord(int a) {
         ss = a;
         bs = a + 4;
-        results = new int[a][9];
+        results = new long[a][9];
     }
 
     //basicaly is writes everything into a word document
@@ -123,7 +123,7 @@ public class WriteToWord {
     }
 
     //adds all the elements to the array
-    public void addTo(int r, int c, int ans) {
+    public void addTo(int r, int c, long ans) {
         results[r][c] = ans;
     }
 
