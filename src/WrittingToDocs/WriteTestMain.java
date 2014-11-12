@@ -16,8 +16,10 @@ public class WriteTestMain
    
     public static void generate()
     {
-        for (int i =0; i<unsorted_Array.length; i++)
+        for (int i =0; i<unsorted_Array.length; i++){
         unsorted_Array[i] = (int)(Math.random()*100000);
+        sorted_Array[i] = unsorted_Array[i];
+        }
     }
     public static void keyMaker()
     {
@@ -28,14 +30,28 @@ public class WriteTestMain
         keys_Array[i] = unsorted_Array[temp];
        }
     }
+    public static void sequentialSearch(int[] a)
+    {
+        for(int i = 0; i<keys_Array.length; i++)
+        {
+            for(int j = 0; j<a.length; j++)
+            {
+                if (keys_Array[i]== a[j])
+                    break;
+            }
+        
+        }
+                
+    }
+    
     public static void main(String[] args)
     {  
         Quicksort qsort = new Quicksort();
         generate();
-        for(int i =0; i<unsorted_Array.length; i++)
-            sorted_Array[i] = unsorted_Array[i];
         qsort.qSort(sorted_Array,0,sorted_Array.length-1);
         keyMaker();
+        sequentialSearch(unsorted_Array);
+        sequentialSearch(sorted_Array);
         
         
        
