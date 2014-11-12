@@ -4,6 +4,12 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * Names: Zimmer, Hoffman, Silewski
+ * Group name: The Best of The Class
+ * Section# 2 
+ * Lab Exercise #6
+ */
 public class WriteTestMain {
 
     private static int[] unsorted_Array = new int[50000];
@@ -50,7 +56,7 @@ public class WriteTestMain {
                 estimatedTime = System.nanoTime() - startTime;
                 return i;
                 //record i  index position
-                
+
             }
         }
         return -1;
@@ -80,8 +86,8 @@ public class WriteTestMain {
         }
         return -1; // if it doesn't find it.
     }
-    
-    public static long getTime(){
+
+    public static long getTime() {
         return estimatedTime;
     }
 

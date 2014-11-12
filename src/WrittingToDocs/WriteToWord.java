@@ -8,8 +8,10 @@ import org.apache.poi.xwpf.usermodel.XWPFTable;
 import org.apache.poi.xwpf.usermodel.XWPFTableRow;
 
 /**
- *
- * @author Brian_Silewski
+ * Names: Zimmer, Hoffman, Silewski
+ * Group name: The Best of The Class
+ * Section# 2 
+ * Lab Exercise #6
  */
 public class WriteToWord {
 
