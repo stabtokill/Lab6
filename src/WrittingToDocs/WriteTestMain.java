@@ -111,7 +111,7 @@ public class WriteTestMain {
              */
         }
         for (int i = 0; i < 100; i++) {
-            System.out.println(unsorted_Array[i] + "   " + unsorted_Array[49899 + i]);
+            System.out.println(unsorted_Array[i] + "\t" + unsorted_Array[49899 + i]);
         }
         /* 
          prints out the first 100 and last 100 values of our unsorted array.   

@@ -101,6 +101,8 @@ public class WriteToWord {
             if (!success) {
                 System.out.println("\nFailed to create new directory, quiting");
                 System.out.close();
+            }else{
+                System.out.println("\nSuccessfully created a new directory");
             }
         } else {
             System.out.println("\nFile 1 is already created");
