@@ -1,0 +1,59 @@
+public class NewClass 
+{
+     for(int i= 0; i<key_Array.length; i++)
+     {
+         seqSearh(unsorted_Array, key_Array[i]);
+         seqSearh(sorted_Array, key_Array[i]);
+         binSearch(unsorted_Array, key_Array[i]);
+         binSearch(sorted_Array, key_Array[i]);
+         /*
+         arrays that are sent to the sequential or binary search to search for
+         the values in the arrays.
+         */
+     }
+     for (int i= 0; i<100; i++)
+        System.out.println(unsorted_Array[i] + "   " + unsorted_Array[49899+i]);
+     /* 
+     prints out the first 100 and last 100 values of our unsorted array.   
+     */
+}
+public static void seqSearch(int[] a, int b)
+{
+/*
+searches using sequential search and records time it took to find it.
+*/
+    long startTime = System.nanoTime();
+    for( int i =0: i<a.length;i++)
+    {
+        if(b==a[i])
+        {
+            long estimatedTime = System.nanoTime() - startTime;
+            //record i  index position
+            break;
+        }
+    }
+}
+public static void binSearch(int[] a, int b)
+{
+/*
+searches using binary search and records time it took to find it if it does find it.
+*/
+     long startTime = System.nanoTime();
+    if(a.length == 0)
+        return false;
+    int low = 0;
+    int high = a.length-1;
+    while(low <= high)
+    {
+        int mid = (low + high)/2;
+        if(b>a[mid])
+            low = mid+1;
+        else if(b<a[mid])
+            high = mid-1;
+        else
+            long estimatedTime = System.nanoTime() - startTime;
+            //record mid  index position
+            return true;
+    return false; // if it doesn't find it.
+    }
+}    
