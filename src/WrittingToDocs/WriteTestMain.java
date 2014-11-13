@@ -72,6 +72,7 @@ public class WriteTestMain {
                 return mid;
             }
         }
+        estimatedTime = System.nanoTime() - startTime;
         return -1; // if it doesn't find it.
     }
 
